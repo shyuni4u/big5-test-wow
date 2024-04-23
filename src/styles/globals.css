@@ -1,0 +1,140 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --color-moreh: 255 87 0;
+    --color-secondary: 250 130 70;
+
+    --header-height: 60px;
+    --footer-height: 40px;
+
+    --toastify-toast-min-height: 36px;
+
+    line-height: 1.5;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+  }
+  h1,
+  .h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  h2,
+  .h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  h3,
+  .h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  h4,
+  .h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  h5,
+  .h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  h6,
+  .h6 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .subtitle1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .subtitle2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .subtitle3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .subtitle4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .body1 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .body2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .body3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .caption1 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .caption2 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .caption3 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .tiny1 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .tiny2 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  [data-popper-arrow]:after {
+    content: '';
+    margin-top: -6px;
+    transform: rotate(45deg);
+    border-color: inherit;
+    border-style: solid;
+    background: inherit;
+    height: 9px;
+    position: absolute;
+    width: 9px;
+  }
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+div.Toastify__toast-container.Toastify__toast-container--bottom-center {
+  width: auto;
+}
+button.Toastify__close-button[aria-label='close'] {
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #393939;
+  border-radius: 4px;
+}
